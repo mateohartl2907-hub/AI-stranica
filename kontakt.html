@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt — STRAŽA</title>
+<meta name="description" content="Kontaktirajte STRAŽU: adresa, telefon, e-mail, radno vrijeme i kontakt obrazac za besplatnu konzultaciju.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;600;700&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#glavni-sadrzaj">Preskoči na glavni sadržaj</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <circle cx="60" cy="60" r="54" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="45" stroke="currentColor" stroke-width="1" stroke-dasharray="1 5"/>
+  <rect x="48" y="52" width="24" height="19" rx="1" stroke="currentColor" stroke-width="2.2"/>
+  <path d="M52 52v-6a8 8 0 0 1 16 0v6" stroke="currentColor" stroke-width="2.2"/>
+  <circle cx="60" cy="61" r="2" fill="currentColor"/>
+  <text x="60" y="90" text-anchor="middle" font-family="'Roboto Slab', serif" font-size="10" font-weight="700" letter-spacing="1.5" fill="currentColor">STRAŽA</text>
+</svg>
+        <span>STRAŽA</span>
+      </a>
+      <nav class="main-nav" aria-label="Glavna navigacija">
+        <div class="wrap">
+          <ul>
+          <li><a href="index.html">Početna</a></li>
+          <li><a href="o-nama.html">O nama</a></li>
+          <li><a href="usluge.html">Usluge</a></li>
+          <li><a href="novosti.html">Novosti</a></li>
+          <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-ghost btn-sm" href="kontakt.html">Zatražite ponudu</a>
+        <button class="nav-toggle" aria-label="Otvori navigaciju" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M2 5H18M2 10H18M2 15H18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="glavni-sadrzaj">
+    <div class="page-intro">
+      <div class="wrap">
+        <p class="breadcrumb"><a href="index.html">Početna</a> / Kontakt</p>
+        <h1>Razgovarajmo o vašoj sigurnosti</h1>
+        <p class="lede" style="max-width:70ch;">Ispunite obrazac ili nas kontaktirajte izravno — odgovaramo u roku od jednog radnog dana.</p>
+      </div>
+    </div>
+
+    <section>
+      <div class="wrap contact-grid">
+        <div>
+          <h2>Pošaljite upit</h2>
+          <p id="contact-success" class="form-success" role="status"></p>
+          <p id="contact-submit-error" class="form-submit-error" role="alert"></p>
+          <!--
+            Obrazac šalje podatke na Formspree (https://formspree.io/f/xbgjnebb).
+            action + method su ovdje kao standardni fallback (radi i bez JS-a);
+            js/script.js hvata submit, validira polja i šalje ih fetch()-om
+            na isti action URL kako korisnik ne bi napuštao stranicu.
+          -->
+          <form class="contact-form" id="contact-form" action="https://formspree.io/f/xbgjnebb" method="POST" novalidate>
+            <div class="form-row" id="row-name">
+              <label for="field-name">Ime i prezime</label>
+              <input type="text" id="field-name" name="name" autocomplete="name" required>
+              <p class="form-error" role="alert"></p>
+            </div>
+            <div class="form-row" id="row-email">
+              <label for="field-email">E-mail adresa</label>
+              <input type="email" id="field-email" name="email" autocomplete="email" required>
+              <p class="form-error" role="alert"></p>
+            </div>
+            <div class="form-row" id="row-company">
+              <label for="field-company">Tvrtka <span style="font-weight:400;color:var(--text-soft);text-transform:none;">(neobavezno)</span></label>
+              <input type="text" id="field-company" name="company" autocomplete="organization">
+            </div>
+            <div class="form-row" id="row-message">
+              <label for="field-message">Poruka</label>
+              <textarea id="field-message" name="message" rows="6" required></textarea>
+              <p class="form-error" role="alert"></p>
+            </div>
+            <!-- Formspree opcije: predmet e-maila i "honeypot" polje protiv spama -->
+            <input type="hidden" name="_subject" value="Novi upit s web stranice STRAŽA">
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+            <div>
+              <button type="submit" class="btn btn-primary">Pošaljite poruku</button>
+            </div>
+            <p class="form-note">Slanjem obrasca prihvaćate našu <a href="politika-privatnosti.html">politiku privatnosti</a>. Vaši podaci koriste se isključivo za odgovor na upit.</p>
+          </form>
+        </div>
+
+        <div>
+          <h2>Kontakt podaci</h2>
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-6.5 7-11.5A7 7 0 0 0 5 9.5C5 14.5 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+              <div>
+                <h3>Adresa</h3>
+                <p>Ilica 42, 10000 Zagreb, Hrvatska</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 14l5 2v4c0 1-1 1.5-2 1.5C9.5 21.5 2.5 14.5 2.5 7c0-1 .5-2 1.5-2Z"/></svg>
+              <div>
+                <h3>Telefon</h3>
+                <p><a href="tel:+38512345678">+385 1 2345 678</a></p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              <div>
+                <h3>E-mail</h3>
+                <p><a href="mailto:info@straza-security.hr">info@straza-security.hr</a></p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+              <div>
+                <h3>Radno vrijeme</h3>
+                <p>Ponedjeljak – Petak, 8:00 – 16:00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-embed">
+            <iframe
+              title="Lokacija STRAŽA d.o.o. na karti — Ilica 42, Zagreb"
+              src="https://www.google.com/maps?q=Ilica%2042%2C%2010000%20Zagreb%2C%20Hrvatska&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a class="brand" href="index.html">
+            <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <circle cx="60" cy="60" r="54" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="45" stroke="currentColor" stroke-width="1" stroke-dasharray="1 5"/>
+  <rect x="48" y="52" width="24" height="19" rx="1" stroke="currentColor" stroke-width="2.2"/>
+  <path d="M52 52v-6a8 8 0 0 1 16 0v6" stroke="currentColor" stroke-width="2.2"/>
+  <circle cx="60" cy="61" r="2" fill="currentColor"/>
+  <text x="60" y="90" text-anchor="middle" font-family="'Roboto Slab', serif" font-size="10" font-weight="700" letter-spacing="1.5" fill="currentColor">STRAŽA</text>
+</svg>
+            <span>STRAŽA</span>
+          </a>
+          <p>Kibernetička i informacijska sigurnost za tvrtke koje ne žele prepustiti stvari slučaju. Zagreb, Hrvatska.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Stranice</h3>
+          <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="o-nama.html">O nama</a></li>
+            <li><a href="usluge.html">Usluge</a></li>
+            <li><a href="novosti.html">Novosti</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="politika-privatnosti.html">Politika privatnosti</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Kontakt</h3>
+          <ul class="footer-contact">
+            <li>Ilica 42, 10000 Zagreb</li>
+            <li><a href="tel:+38512345678">+385 1 2345 678</a></li>
+            <li><a href="mailto:info@straza-security.hr">info@straza-security.hr</a></li>
+            <li>Pon–Pet, 8:00–16:00</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Prijavite se na newsletter</h3>
+          <p>Kratke, korisne obavijesti o prijetnjama i novim člancima. Bez spama.</p>
+          <form class="newsletter-form" novalidate>
+            <label class="vh" for="newsletter-email-contact">E-mail adresa</label>
+            <input type="email" id="newsletter-email-contact" placeholder="vasa@email.hr" required>
+            <button type="submit" class="btn btn-primary btn-sm">Prijava</button>
+          </form>
+          <p class="newsletter-success" role="status"></p>
+          <p class="newsletter-note">Prijavom prihvaćate našu <a href="politika-privatnosti.html">politiku privatnosti</a>. Odjava je moguća u svakom trenutku.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 STRAŽA d.o.o. Sva prava pridržana.</p>
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="STRAŽA na Facebooku"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 8.5h-2a1.5 1.5 0 0 0-1.5 1.5v2H15l-.4 2.5h-2.1V21h-2.6v-6.5H8V12h1.9v-2.3c0-2 1.2-3.2 3.1-3.2h2v2.5Z"/></svg></a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="STRAŽA na LinkedInu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 10.5V16M8 8v.01M12 16v-3.2c0-1.1.7-1.8 1.7-1.8 1 0 1.6.7 1.6 1.8V16"/></svg></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="STRAŽA na Instagramu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="3.2"/><circle cx="16.2" cy="7.8" r=".6" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
