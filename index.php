@@ -29,8 +29,8 @@
           <h1>Štitimo ono što je vašoj tvrtki najvrjednije — prije nego što to netko drugi pokuša iskoristiti.</h1>
           <p class="lede">STRAŽA je hrvatska tvrtka za informacijsku i kibernetičku sigurnost. Provodimo penetracijska testiranja, sigurnosne audite i edukacije te pomažemo tvrtkama da postanu i ostanu sigurne — bez nepotrebnog stručnog žargona.</p>
           <div class="hero-ctas">
-            <a class="btn btn-primary" href="kontakt.html">Zatražite besplatnu procjenu</a>
-            <a class="btn btn-outline" href="usluge.html">Pogledajte usluge</a>
+            <a class="btn btn-primary" href="kontakt.php">Zatražite besplatnu procjenu</a>
+            <a class="btn btn-outline" href="usluge.php">Pogledajte usluge</a>
           </div>
           <div class="hero-stats">
             <div><strong>120+</strong><span>PROVEDENIH PROJEKATA</span></div>
@@ -75,37 +75,37 @@
         <span class="num">01</span>
         <h3>Penetracijsko testiranje</h3>
         <p>Simuliramo stvarni napad na vaše sustave kako bismo pronašli propuste prije napadača.</p>
-        <a class="go" href="usluge.html#pentest">Detalji →</a>
+        <a class="go" href="usluge.php#pentest">Detalji →</a>
       </div>
       <div class="ledger-row">
         <span class="num">02</span>
         <h3>Sigurnosni audit i procjena rizika</h3>
         <p>Sveobuhvatna analiza sigurnosnog stanja tvrtke — od infrastrukture do internih procesa.</p>
-        <a class="go" href="usluge.html#audit">Detalji →</a>
+        <a class="go" href="usluge.php#audit">Detalji →</a>
       </div>
       <div class="ledger-row">
         <span class="num">03</span>
         <h3>Edukacija zaposlenika</h3>
         <p>Praktične radionice koje zaposlenike uče prepoznati phishing, socijalni inženjering i druge prijetnje.</p>
-        <a class="go" href="usluge.html#edukacija">Detalji →</a>
+        <a class="go" href="usluge.php#edukacija">Detalji →</a>
       </div>
       <div class="ledger-row">
         <span class="num">04</span>
         <h3>Sigurnosno savjetovanje i usklađenost</h3>
         <p>Pomažemo pri uvođenju ISO 27001, usklađivanju s GDPR-om i pripremi za NIS2 direktivu.</p>
-        <a class="go" href="usluge.html#savjetovanje">Detalji →</a>
+        <a class="go" href="usluge.php#savjetovanje">Detalji →</a>
       </div>
       <div class="ledger-row">
         <span class="num">05</span>
         <h3>Upravljanje incidentima i odgovor</h3>
         <p>Brz i strukturiran odgovor na sigurnosne incidente — od otkrivanja do sanacije i izvještavanja.</p>
-        <a class="go" href="usluge.html#incidenti">Detalji →</a>
+        <a class="go" href="usluge.php#incidenti">Detalji →</a>
       </div>
       <div class="ledger-row">
         <span class="num">06</span>
         <h3>Implementacija i kontinuirani nadzor</h3>
         <p>Postavljamo sigurnosne mjere i pratimo vaše sustave kontinuirano, ne samo jednom godišnje.</p>
-        <a class="go" href="usluge.html#nadzor">Detalji →</a>
+        <a class="go" href="usluge.php#nadzor">Detalji →</a>
       </div>
         </div>
       </div>
@@ -168,7 +168,7 @@
         </div>
       </article>
         </div>
-        <p style="margin-top:1.75rem;"><a class="btn btn-outline btn-sm" href="o-nama.html">Upoznajte cijeli tim</a></p>
+        <p style="margin-top:1.75rem;"><a class="btn btn-outline btn-sm" href="o-nama.php">Upoznajte cijeli tim</a></p>
       </div>
     </section>
 
@@ -198,9 +198,9 @@
   </svg></div>
         <div class="article-body">
           <p class="article-meta">Osnove sigurnosti · 28.08.2026. · 6 min čitanja</p>
-          <h3><a href="clanci/5-najcescih-sigurnosnih-propusta.html">5 najčešćih sigurnosnih propusta u malim i srednjim tvrtkama</a></h3>
+          <h3><a href="clanci/5-najcescih-sigurnosnih-propusta.php">5 najčešćih sigurnosnih propusta u malim i srednjim tvrtkama</a></h3>
           <p>Većina uspješnih napada ne koristi sofisticirane tehnike — oslanja se na propuste koji se mogu izbjeći. Pregledali smo pet najčešćih.</p>
-          <a class="read-more" href="clanci/5-najcescih-sigurnosnih-propusta.html">Pročitaj više →</a>
+          <a class="read-more" href="clanci/5-najcescih-sigurnosnih-propusta.php">Pročitaj više →</a>
         </div>
       </article>
       <article class="article-card">
@@ -221,9 +221,9 @@
   </svg></div>
         <div class="article-body">
           <p class="article-meta">Prijetnje · 15.08.2026. · 5 min čitanja</p>
-          <h3><a href="clanci/phishing-napadi-2026.html">Phishing napadi u 2026.: kako prepoznati i zaustaviti prevaru</a></h3>
+          <h3><a href="clanci/phishing-napadi-2026.php">Phishing napadi u 2026.: kako prepoznati i zaustaviti prevaru</a></h3>
           <p>Phishing poruke postaju sve uvjerljivije, a razlikuju li se uopće od legitimne komunikacije? Donosimo praktične znakove upozorenja.</p>
-          <a class="read-more" href="clanci/phishing-napadi-2026.html">Pročitaj više →</a>
+          <a class="read-more" href="clanci/phishing-napadi-2026.php">Pročitaj više →</a>
         </div>
       </article>
       <article class="article-card">
@@ -244,13 +244,13 @@
   </svg></div>
         <div class="article-body">
           <p class="article-meta">Usklađenost · 02.08.2026. · 7 min čitanja</p>
-          <h3><a href="clanci/zasto-je-iso-27001-standard.html">Zašto je ISO 27001 postao standard, a ne izbor</a></h3>
+          <h3><a href="clanci/zasto-je-iso-27001-standard.php">Zašto je ISO 27001 postao standard, a ne izbor</a></h3>
           <p>Sve više poslovnih partnera i investitora traži dokaz o upravljanju informacijskom sigurnošću. Objašnjavamo zašto i kako krenuti.</p>
-          <a class="read-more" href="clanci/zasto-je-iso-27001-standard.html">Pročitaj više →</a>
+          <a class="read-more" href="clanci/zasto-je-iso-27001-standard.php">Pročitaj više →</a>
         </div>
       </article>
         </div>
-        <p style="margin-top:1.75rem;"><a class="btn btn-outline btn-sm" href="novosti.html">Svi članci</a></p>
+        <p style="margin-top:1.75rem;"><a class="btn btn-outline btn-sm" href="novosti.php">Svi članci</a></p>
       </div>
     </section>
 
@@ -259,7 +259,7 @@
         <h2>Provjerite jeste li izloženi riziku — prije nego što to netko drugi otkrije.</h2>
         <p>Prvi razgovor je besplatan i bez obaveza. Recite nam s čime se suočavate, a mi ćemo predložiti sljedeći korak.</p>
         <div class="hero-ctas">
-          <a class="btn btn-primary" href="kontakt.html">Kontaktirajte nas</a>
+          <a class="btn btn-primary" href="kontakt.php">Kontaktirajte nas</a>
         </div>
       </div>
     </section>

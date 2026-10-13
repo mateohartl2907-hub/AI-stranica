@@ -22,7 +22,7 @@
   <main id="glavni-sadrzaj">
     <div class="page-intro">
       <div class="wrap">
-        <p class="breadcrumb"><a href="index.html">Početna</a> / O nama</p>
+        <p class="breadcrumb"><a href="index.php">Početna</a> / O nama</p>
         <h1>Sigurnost je zanat koji se gradi godinama — ne prodaje se u paketu.</h1>
         <p class="lede" style="max-width:70ch;">STRAŽA je osnovana 2015. godine s jednostavnom idejom: informacijska sigurnost ne bi trebala biti privilegija velikih korporacija. Danas surađujemo s tvrtkama iz proizvodnje, financija, e-trgovine i javnog sektora diljem Hrvatske i regije.</p>
       </div>
@@ -148,7 +148,7 @@
         <h2>Želite razgovarati s nekim iz tima?</h2>
         <p>Rado ćemo saslušati s čime se suočavate i predložiti sljedeći korak — bez obaveze.</p>
         <div class="hero-ctas">
-          <a class="btn btn-primary" href="kontakt.html">Kontaktirajte nas</a>
+          <a class="btn btn-primary" href="kontakt.php">Kontaktirajte nas</a>
         </div>
       </div>
     </section>

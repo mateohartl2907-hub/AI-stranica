@@ -15,7 +15,7 @@
   <a class="skip-link" href="#glavni-sadrzaj">Preskoči na glavni sadržaj</a>
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="index.html">
+      <a class="brand" href="index.php">
         <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
   <circle cx="60" cy="60" r="54" stroke="currentColor" stroke-width="2"/>
   <circle cx="60" cy="60" r="45" stroke="currentColor" stroke-width="1" stroke-dasharray="1 5"/>
@@ -29,16 +29,16 @@
       <nav class="main-nav" aria-label="Glavna navigacija">
         <div class="wrap">
           <ul>
-          <li><a href="index.html">Početna</a></li>
-          <li><a href="o-nama.html">O nama</a></li>
-          <li><a href="usluge.html">Usluge</a></li>
-          <li><a href="novosti.html">Novosti</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="index.php">Početna</a></li>
+          <li><a href="o-nama.php">O nama</a></li>
+          <li><a href="usluge.php">Usluge</a></li>
+          <li><a href="novosti.php">Novosti</a></li>
+          <li><a href="kontakt.php">Kontakt</a></li>
           </ul>
         </div>
       </nav>
       <div class="header-actions">
-        <a class="btn btn-ghost btn-sm" href="kontakt.html">Zatražite ponudu</a>
+        <a class="btn btn-ghost btn-sm" href="kontakt.php">Zatražite ponudu</a>
         <button class="nav-toggle" aria-label="Otvori navigaciju" aria-expanded="false">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M2 5H18M2 10H18M2 15H18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
         </button>
@@ -48,7 +48,7 @@
   <main id="glavni-sadrzaj">
     <div class="page-intro">
       <div class="wrap">
-        <p class="breadcrumb"><a href="index.html">Početna</a> / Politika privatnosti</p>
+        <p class="breadcrumb"><a href="index.php">Početna</a> / Politika privatnosti</p>
         <h1>Politika privatnosti</h1>
         <p class="lede">Zadnje ažurirano: 1. rujna 2026.</p>
       </div>
@@ -105,7 +105,7 @@
     <div class="wrap">
       <div class="footer-grid">
         <div class="footer-col footer-brand">
-          <a class="brand" href="index.html">
+          <a class="brand" href="index.php">
             <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
   <circle cx="60" cy="60" r="54" stroke="currentColor" stroke-width="2"/>
   <circle cx="60" cy="60" r="45" stroke="currentColor" stroke-width="1" stroke-dasharray="1 5"/>
@@ -121,12 +121,12 @@
         <div class="footer-col">
           <h3>Stranice</h3>
           <ul>
-            <li><a href="index.html">Početna</a></li>
-            <li><a href="o-nama.html">O nama</a></li>
-            <li><a href="usluge.html">Usluge</a></li>
-            <li><a href="novosti.html">Novosti</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-            <li><a href="politika-privatnosti.html">Politika privatnosti</a></li>
+            <li><a href="index.php">Početna</a></li>
+            <li><a href="o-nama.php">O nama</a></li>
+            <li><a href="usluge.php">Usluge</a></li>
+            <li><a href="novosti.php">Novosti</a></li>
+            <li><a href="kontakt.php">Kontakt</a></li>
+            <li><a href="politika-privatnosti.php">Politika privatnosti</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -147,7 +147,7 @@
             <button type="submit" class="btn btn-primary btn-sm">Prijava</button>
           </form>
           <p class="newsletter-success" role="status"></p>
-          <p class="newsletter-note">Prijavom prihvaćate našu <a href="politika-privatnosti.html">politiku privatnosti</a>. Odjava je moguća u svakom trenutku.</p>
+          <p class="newsletter-note">Prijavom prihvaćate našu <a href="politika-privatnosti.php">politiku privatnosti</a>. Odjava je moguća u svakom trenutku.</p>
         </div>
       </div>
       <div class="footer-bottom">

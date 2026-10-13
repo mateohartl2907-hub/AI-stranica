@@ -15,7 +15,7 @@
   <a class="skip-link" href="#glavni-sadrzaj">Preskoči na glavni sadržaj</a>
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="index.html">
+      <a class="brand" href="index.php">
         <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
   <circle cx="60" cy="60" r="54" stroke="currentColor" stroke-width="2"/>
   <circle cx="60" cy="60" r="45" stroke="currentColor" stroke-width="1" stroke-dasharray="1 5"/>
@@ -29,16 +29,16 @@
       <nav class="main-nav" aria-label="Glavna navigacija">
         <div class="wrap">
           <ul>
-          <li><a href="index.html">Početna</a></li>
-          <li><a href="o-nama.html">O nama</a></li>
-          <li><a href="usluge.html" aria-current="page">Usluge</a></li>
-          <li><a href="novosti.html">Novosti</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="index.php">Početna</a></li>
+          <li><a href="o-nama.php">O nama</a></li>
+          <li><a href="usluge.php" aria-current="page">Usluge</a></li>
+          <li><a href="novosti.php">Novosti</a></li>
+          <li><a href="kontakt.php">Kontakt</a></li>
           </ul>
         </div>
       </nav>
       <div class="header-actions">
-        <a class="btn btn-ghost btn-sm" href="kontakt.html">Zatražite ponudu</a>
+        <a class="btn btn-ghost btn-sm" href="kontakt.php">Zatražite ponudu</a>
         <button class="nav-toggle" aria-label="Otvori navigaciju" aria-expanded="false">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M2 5H18M2 10H18M2 15H18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
         </button>
@@ -48,7 +48,7 @@
   <main id="glavni-sadrzaj">
     <div class="page-intro">
       <div class="wrap">
-        <p class="breadcrumb"><a href="index.html">Početna</a> / Usluge</p>
+        <p class="breadcrumb"><a href="index.php">Početna</a> / Usluge</p>
         <h1>Usluge prilagođene stvarnim rizicima vaše tvrtke</h1>
         <p class="lede" style="max-width:70ch;">Bilo da vam treba jednokratna provjera prije lansiranja proizvoda ili kontinuiran nadzor cijele infrastrukture, birate opseg koji odgovara vašim potrebama i proračunu.</p>
       </div>
@@ -61,7 +61,7 @@
           <span class="file-tag">Usluga 01</span>
           <h2>Penetracijsko testiranje</h2>
           <p class="lede">Simuliramo stvarni napad na vaše sustave kako bismo pronašli propuste prije napadača.</p>
-          <p><a class="btn btn-outline btn-sm" href="kontakt.html">Zatražite ponudu za ovu uslugu</a></p>
+          <p><a class="btn btn-outline btn-sm" href="kontakt.php">Zatražite ponudu za ovu uslugu</a></p>
         </div>
         <dl>
           <dt>Za koga je namijenjena</dt>
@@ -77,7 +77,7 @@
           <span class="file-tag">Usluga 02</span>
           <h2>Sigurnosni audit i procjena rizika</h2>
           <p class="lede">Sveobuhvatna analiza sigurnosnog stanja tvrtke — od infrastrukture do internih procesa.</p>
-          <p><a class="btn btn-outline btn-sm" href="kontakt.html">Zatražite ponudu za ovu uslugu</a></p>
+          <p><a class="btn btn-outline btn-sm" href="kontakt.php">Zatražite ponudu za ovu uslugu</a></p>
         </div>
         <dl>
           <dt>Za koga je namijenjena</dt>
@@ -93,7 +93,7 @@
           <span class="file-tag">Usluga 03</span>
           <h2>Edukacija zaposlenika</h2>
           <p class="lede">Praktične radionice koje zaposlenike uče prepoznati phishing, socijalni inženjering i druge prijetnje.</p>
-          <p><a class="btn btn-outline btn-sm" href="kontakt.html">Zatražite ponudu za ovu uslugu</a></p>
+          <p><a class="btn btn-outline btn-sm" href="kontakt.php">Zatražite ponudu za ovu uslugu</a></p>
         </div>
         <dl>
           <dt>Za koga je namijenjena</dt>
@@ -109,7 +109,7 @@
           <span class="file-tag">Usluga 04</span>
           <h2>Sigurnosno savjetovanje i usklađenost</h2>
           <p class="lede">Pomažemo pri uvođenju ISO 27001, usklađivanju s GDPR-om i pripremi za NIS2 direktivu.</p>
-          <p><a class="btn btn-outline btn-sm" href="kontakt.html">Zatražite ponudu za ovu uslugu</a></p>
+          <p><a class="btn btn-outline btn-sm" href="kontakt.php">Zatražite ponudu za ovu uslugu</a></p>
         </div>
         <dl>
           <dt>Za koga je namijenjena</dt>
@@ -125,7 +125,7 @@
           <span class="file-tag">Usluga 05</span>
           <h2>Upravljanje incidentima i odgovor</h2>
           <p class="lede">Brz i strukturiran odgovor na sigurnosne incidente — od otkrivanja do sanacije i izvještavanja.</p>
-          <p><a class="btn btn-outline btn-sm" href="kontakt.html">Zatražite ponudu za ovu uslugu</a></p>
+          <p><a class="btn btn-outline btn-sm" href="kontakt.php">Zatražite ponudu za ovu uslugu</a></p>
         </div>
         <dl>
           <dt>Za koga je namijenjena</dt>
@@ -141,7 +141,7 @@
           <span class="file-tag">Usluga 06</span>
           <h2>Implementacija i kontinuirani nadzor</h2>
           <p class="lede">Postavljamo sigurnosne mjere i pratimo vaše sustave kontinuirano, ne samo jednom godišnje.</p>
-          <p><a class="btn btn-outline btn-sm" href="kontakt.html">Zatražite ponudu za ovu uslugu</a></p>
+          <p><a class="btn btn-outline btn-sm" href="kontakt.php">Zatražite ponudu za ovu uslugu</a></p>
         </div>
         <dl>
           <dt>Za koga je namijenjena</dt>
@@ -213,7 +213,7 @@
         <h2>Niste sigurni koja vam usluga odgovara?</h2>
         <p>Opišite nam svoju situaciju — predložit ćemo najprikladnije rješenje, bez pritiska na kupnju.</p>
         <div class="hero-ctas">
-          <a class="btn btn-primary" href="kontakt.html">Zatražite besplatnu konzultaciju</a>
+          <a class="btn btn-primary" href="kontakt.php">Zatražite besplatnu konzultaciju</a>
         </div>
       </div>
     </section>
@@ -223,7 +223,7 @@
     <div class="wrap">
       <div class="footer-grid">
         <div class="footer-col footer-brand">
-          <a class="brand" href="index.html">
+          <a class="brand" href="index.php">
             <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
   <circle cx="60" cy="60" r="54" stroke="currentColor" stroke-width="2"/>
   <circle cx="60" cy="60" r="45" stroke="currentColor" stroke-width="1" stroke-dasharray="1 5"/>
@@ -239,12 +239,12 @@
         <div class="footer-col">
           <h3>Stranice</h3>
           <ul>
-            <li><a href="index.html">Početna</a></li>
-            <li><a href="o-nama.html">O nama</a></li>
-            <li><a href="usluge.html">Usluge</a></li>
-            <li><a href="novosti.html">Novosti</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-            <li><a href="politika-privatnosti.html">Politika privatnosti</a></li>
+            <li><a href="index.php">Početna</a></li>
+            <li><a href="o-nama.php">O nama</a></li>
+            <li><a href="usluge.php">Usluge</a></li>
+            <li><a href="novosti.php">Novosti</a></li>
+            <li><a href="kontakt.php">Kontakt</a></li>
+            <li><a href="politika-privatnosti.php">Politika privatnosti</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -265,7 +265,7 @@
             <button type="submit" class="btn btn-primary btn-sm">Prijava</button>
           </form>
           <p class="newsletter-success" role="status"></p>
-          <p class="newsletter-note">Prijavom prihvaćate našu <a href="politika-privatnosti.html">politiku privatnosti</a>. Odjava je moguća u svakom trenutku.</p>
+          <p class="newsletter-note">Prijavom prihvaćate našu <a href="politika-privatnosti.php">politiku privatnosti</a>. Odjava je moguća u svakom trenutku.</p>
         </div>
       </div>
       <div class="footer-bottom">

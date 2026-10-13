@@ -15,7 +15,7 @@
   <a class="skip-link" href="#glavni-sadrzaj">Preskoči na glavni sadržaj</a>
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="index.html">
+      <a class="brand" href="index.php">
         <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
   <circle cx="60" cy="60" r="54" stroke="currentColor" stroke-width="2"/>
   <circle cx="60" cy="60" r="45" stroke="currentColor" stroke-width="1" stroke-dasharray="1 5"/>
@@ -29,16 +29,16 @@
       <nav class="main-nav" aria-label="Glavna navigacija">
         <div class="wrap">
           <ul>
-          <li><a href="index.html">Početna</a></li>
-          <li><a href="o-nama.html">O nama</a></li>
-          <li><a href="usluge.html">Usluge</a></li>
-          <li><a href="novosti.html" aria-current="page">Novosti</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="index.php">Početna</a></li>
+          <li><a href="o-nama.php">O nama</a></li>
+          <li><a href="usluge.php">Usluge</a></li>
+          <li><a href="novosti.php" aria-current="page">Novosti</a></li>
+          <li><a href="kontakt.php">Kontakt</a></li>
           </ul>
         </div>
       </nav>
       <div class="header-actions">
-        <a class="btn btn-ghost btn-sm" href="kontakt.html">Zatražite ponudu</a>
+        <a class="btn btn-ghost btn-sm" href="kontakt.php">Zatražite ponudu</a>
         <button class="nav-toggle" aria-label="Otvori navigaciju" aria-expanded="false">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M2 5H18M2 10H18M2 15H18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
         </button>
@@ -48,7 +48,7 @@
   <main id="glavni-sadrzaj">
     <div class="page-intro">
       <div class="wrap">
-        <p class="breadcrumb"><a href="index.html">Početna</a> / Novosti</p>
+        <p class="breadcrumb"><a href="index.php">Početna</a> / Novosti</p>
         <h1>Novosti i stručni članci</h1>
         <p class="lede" style="max-width:70ch;">Praktični tekstovi o prijetnjama, trendovima i koracima za bolju sigurnost — napisani tako da ih razumiju i oni koji nisu stručnjaci za IT.</p>
       </div>
@@ -75,9 +75,9 @@
   </svg></div>
         <div class="article-body">
           <p class="article-meta">Osnove sigurnosti · 28.08.2026. · 6 min čitanja</p>
-          <h3><a href="clanci/5-najcescih-sigurnosnih-propusta.html">5 najčešćih sigurnosnih propusta u malim i srednjim tvrtkama</a></h3>
+          <h3><a href="clanci/5-najcescih-sigurnosnih-propusta.php">5 najčešćih sigurnosnih propusta u malim i srednjim tvrtkama</a></h3>
           <p>Većina uspješnih napada ne koristi sofisticirane tehnike — oslanja se na propuste koji se mogu izbjeći. Pregledali smo pet najčešćih.</p>
-          <a class="read-more" href="clanci/5-najcescih-sigurnosnih-propusta.html">Pročitaj više →</a>
+          <a class="read-more" href="clanci/5-najcescih-sigurnosnih-propusta.php">Pročitaj više →</a>
         </div>
       </article>
       <article class="article-card">
@@ -98,9 +98,9 @@
   </svg></div>
         <div class="article-body">
           <p class="article-meta">Prijetnje · 15.08.2026. · 5 min čitanja</p>
-          <h3><a href="clanci/phishing-napadi-2026.html">Phishing napadi u 2026.: kako prepoznati i zaustaviti prevaru</a></h3>
+          <h3><a href="clanci/phishing-napadi-2026.php">Phishing napadi u 2026.: kako prepoznati i zaustaviti prevaru</a></h3>
           <p>Phishing poruke postaju sve uvjerljivije, a razlikuju li se uopće od legitimne komunikacije? Donosimo praktične znakove upozorenja.</p>
-          <a class="read-more" href="clanci/phishing-napadi-2026.html">Pročitaj više →</a>
+          <a class="read-more" href="clanci/phishing-napadi-2026.php">Pročitaj više →</a>
         </div>
       </article>
       <article class="article-card">
@@ -121,9 +121,9 @@
   </svg></div>
         <div class="article-body">
           <p class="article-meta">Usklađenost · 02.08.2026. · 7 min čitanja</p>
-          <h3><a href="clanci/zasto-je-iso-27001-standard.html">Zašto je ISO 27001 postao standard, a ne izbor</a></h3>
+          <h3><a href="clanci/zasto-je-iso-27001-standard.php">Zašto je ISO 27001 postao standard, a ne izbor</a></h3>
           <p>Sve više poslovnih partnera i investitora traži dokaz o upravljanju informacijskom sigurnošću. Objašnjavamo zašto i kako krenuti.</p>
-          <a class="read-more" href="clanci/zasto-je-iso-27001-standard.html">Pročitaj više →</a>
+          <a class="read-more" href="clanci/zasto-je-iso-27001-standard.php">Pročitaj više →</a>
         </div>
       </article>
         </div>
@@ -142,7 +142,7 @@
     <div class="wrap">
       <div class="footer-grid">
         <div class="footer-col footer-brand">
-          <a class="brand" href="index.html">
+          <a class="brand" href="index.php">
             <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
   <circle cx="60" cy="60" r="54" stroke="currentColor" stroke-width="2"/>
   <circle cx="60" cy="60" r="45" stroke="currentColor" stroke-width="1" stroke-dasharray="1 5"/>
@@ -158,12 +158,12 @@
         <div class="footer-col">
           <h3>Stranice</h3>
           <ul>
-            <li><a href="index.html">Početna</a></li>
-            <li><a href="o-nama.html">O nama</a></li>
-            <li><a href="usluge.html">Usluge</a></li>
-            <li><a href="novosti.html">Novosti</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-            <li><a href="politika-privatnosti.html">Politika privatnosti</a></li>
+            <li><a href="index.php">Početna</a></li>
+            <li><a href="o-nama.php">O nama</a></li>
+            <li><a href="usluge.php">Usluge</a></li>
+            <li><a href="novosti.php">Novosti</a></li>
+            <li><a href="kontakt.php">Kontakt</a></li>
+            <li><a href="politika-privatnosti.php">Politika privatnosti</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -184,7 +184,7 @@
             <button type="submit" class="btn btn-primary btn-sm">Prijava</button>
           </form>
           <p class="newsletter-success" role="status"></p>
-          <p class="newsletter-note">Prijavom prihvaćate našu <a href="politika-privatnosti.html">politiku privatnosti</a>. Odjava je moguća u svakom trenutku.</p>
+          <p class="newsletter-note">Prijavom prihvaćate našu <a href="politika-privatnosti.php">politiku privatnosti</a>. Odjava je moguća u svakom trenutku.</p>
         </div>
       </div>
       <div class="footer-bottom">
