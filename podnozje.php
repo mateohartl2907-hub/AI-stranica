@@ -1,3 +1,15 @@
+<?php
+$godinaOsnutka = 2019;
+$X = date("Y") - $godinaOsnutka;
+
+$email = " Info@SigurnaMreza.HR ";
+// trim() uklanja razmake na početku i kraju, a strtolower() pretvara u mala slova
+$cistEmail = strtolower(trim($email));
+
+?>
+<p>Na tržištu od <?php echo $godinaOsnutka; ?>. — već <?php echo $X; ?> godina</p>
+<a href="mailto:<?php echo $cistEmail; ?>"><?php echo $cistEmail; ?></a>
+
 <footer class="site-footer">
     <div class="wrap">
       <div class="footer-grid">
