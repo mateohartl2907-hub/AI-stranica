@@ -1,3 +1,27 @@
+<?php
+const PDV = 0.25;
+
+// Nazivi i cijene usluga bez PDV-a
+$usluga1_naziv = "Procjena rizika";
+$usluga1_cijena = 450;
+
+$usluga2_naziv = "Sigurnosna analiza";
+$usluga2_cijena = 1280;
+
+$usluga3_naziv = "Edukacija zaposlenika";
+$usluga3_cijena = 300;
+
+// Izračun iznosa PDV-a i ukupne cijene za svaku uslugu
+$usluga1_pdv = $usluga1_cijena * PDV;
+$usluga1_ukupno = $usluga1_cijena + $usluga1_pdv;
+
+$usluga2_pdv = $usluga2_cijena * PDV;
+$usluga2_ukupno = $usluga2_cijena + $usluga2_pdv;
+
+$usluga3_pdv = $usluga3_cijena * PDV;
+$usluga3_ukupno = $usluga3_cijena + $usluga3_pdv;
+?>
+
 <!DOCTYPE html>
 <html lang="hr">
 <head>
@@ -12,6 +36,36 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<table>
+        <tr>
+            <th>Usluga</th>
+            <th>Bez PDV-a</th>
+            <th>PDV</th>
+            <th>Ukupno</th>
+        </tr>
+        <tr>
+            <td><?php echo $usluga1_naziv; ?></td>
+            <td><?php echo number_format($usluga1_cijena, 2, ',', '.') . ' €'; ?></td>
+            <td><?php echo number_format($usluga1_pdv, 2, ',', '.') . ' €'; ?></td>
+            <td><?php echo number_format($usluga1_ukupno, 2, ',', '.') . ' €'; ?></td>
+        </tr>
+        <tr>
+            <td><?php echo $usluga2_naziv; ?></td>
+            <td><?php echo number_format($usluga2_cijena, 2, ',', '.') . ' €'; ?></td>
+            <td><?php echo number_format($usluga2_pdv, 2, ',', '.') . ' €'; ?></td>
+            <td><?php echo number_format($usluga2_ukupno, 2, ',', '.') . ' €'; ?></td>
+        </tr>
+        <tr>
+            <td><?php echo $usluga3_naziv; ?></td>
+            <td><?php echo number_format($usluga3_cijena, 2, ',', '.') . ' €'; ?></td>
+            <td><?php echo number_format($usluga3_pdv, 2, ',', '.') . ' €'; ?></td>
+            <td><?php echo number_format($usluga3_ukupno, 2, ',', '.') . ' €'; ?></td>
+        </tr>
+    </table>
+
+    <p>Cijene ažurirane: <?php echo date('d.m.Y.'); ?></p>
+
+
   <a class="skip-link" href="#glavni-sadrzaj">Preskoči na glavni sadržaj</a>
   <header class="site-header">
     <div class="wrap">
