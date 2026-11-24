@@ -141,6 +141,102 @@
       </div>
     </section>
 
+
+    <?php
+// Opcionalno: postavi vremensku zonu ako server nije u hrvatskoj zoni
+// date_default_timezone_set('Europe/Zagreb');
+
+$dan = (int) date("N"); // 1 = ponedjeljak ... 7 = nedjelja
+$sat = (int) date("G"); // sat bez vodeće nule, 0-23
+
+// Logika radnog vremena:
+// Pon - Pet (1 - 5): 8:00 - 16:00 (u 16:00 je već zatvoreno -> sat 8..15)
+// Subota (6): 9:00 - 13:00 (u 13:00 je već zatvoreno -> sat 9..12)
+// Nedjelja (7): ne radi
+
+if ($dan >= 1 && $dan <= 5 && $sat >= 8 && $sat < 16) {
+    $poruka = "Otvoreno – radimo do 16:00";
+    $klasa = "status-otvoreno";
+} elseif ($dan === 6 && $sat >= 9 && $sat < 13) {
+    $poruka = "Otvoreno – radimo do 13:00";
+    $klasa = "status-otvoreno";
+} else {
+    $poruka = "Zatvoreno";
+    $klasa = "status-zatvoreno";
+}
+?>
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt – Radno vrijeme</title>
+    <style>
+        .radno-vrijeme-box {
+            max-width: 420px;
+            font-family: Arial, sans-serif;
+        }
+        table.radno-vrijeme {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 12px;
+        }
+        table.radno-vrijeme th,
+        table.radno-vrijeme td {
+            border: 1px solid #ccc;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        table.radno-vrijeme th {
+            background-color: #f4f4f4;
+        }
+        .poruka-status {
+            font-weight: bold;
+            font-size: 1.05rem;
+        }
+        .status-otvoreno {
+            color: #1e7e34; /* zeleno */
+        }
+        .status-zatvoreno {
+            color: #6c757d; /* sivo */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="radno-vrijeme-box">
+        <h2>Radno vrijeme</h2>
+
+        <table class="radno-vrijeme">
+            <thead>
+                <tr>
+                    <th>Dan</th>
+                    <th>Radno vrijeme</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ponedjeljak – Petak</td>
+                    <td>08:00 – 16:00</td>
+                </tr>
+                <tr>
+                    <td>Subota</td>
+                    <td>09:00 – 13:00</td>
+                </tr>
+                <tr>
+                    <td>Nedjelja</td>
+                    <td>Zatvoreno</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="poruka-status <?= htmlspecialchars($klasa) ?>">
+            <?= htmlspecialchars($poruka) ?>
+        </p>
+    </div>
+
+</body>
+</html>
+
   </main>
   <footer class="site-footer">
     <div class="wrap">
@@ -202,5 +298,8 @@
     </div>
   </footer>
   <script src="js/script.js"></script>
+
+
+  
 </body>
 </html>

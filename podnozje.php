@@ -68,4 +68,5 @@ $cistEmail = strtolower(trim($email));
         </div>
       </div>
     </div>
+
   </footer>
