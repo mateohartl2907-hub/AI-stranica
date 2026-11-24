@@ -60,12 +60,7 @@
           <h2>Pošaljite upit</h2>
           <p id="contact-success" class="form-success" role="status"></p>
           <p id="contact-submit-error" class="form-submit-error" role="alert"></p>
-          <!--
-            Obrazac šalje podatke na Formspree (https://formspree.io/f/xbgjnebb).
-            action + method su ovdje kao standardni fallback (radi i bez JS-a);
-            js/script.js hvata submit, validira polja i šalje ih fetch()-om
-            na isti action URL kako korisnik ne bi napuštao stranicu.
-          -->
+          
           <form class="contact-form" id="contact-form" action="https://formspree.io/f/xbgjnebb" method="POST" novalidate>
             <div class="form-row" id="row-name">
               <label for="field-name">Ime i prezime</label>
@@ -86,7 +81,7 @@
               <textarea id="field-message" name="message" rows="6" required></textarea>
               <p class="form-error" role="alert"></p>
             </div>
-            <!-- Formspree opcije: predmet e-maila i "honeypot" polje protiv spama -->
+            
             <input type="hidden" name="_subject" value="Novi upit s web stranice STRAŽA">
             <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
             <div>
@@ -143,16 +138,10 @@
 
 
     <?php
-// Opcionalno: postavi vremensku zonu ako server nije u hrvatskoj zoni
-// date_default_timezone_set('Europe/Zagreb');
 
-$dan = (int) date("N"); // 1 = ponedjeljak ... 7 = nedjelja
-$sat = (int) date("G"); // sat bez vodeće nule, 0-23
 
-// Logika radnog vremena:
-// Pon - Pet (1 - 5): 8:00 - 16:00 (u 16:00 je već zatvoreno -> sat 8..15)
-// Subota (6): 9:00 - 13:00 (u 13:00 je već zatvoreno -> sat 9..12)
-// Nedjelja (7): ne radi
+$dan = (int) date("D"); 
+$sat = (int) date("G"); 
 
 if ($dan >= 1 && $dan <= 5 && $sat >= 8 && $sat < 16) {
     $poruka = "Otvoreno – radimo do 16:00";
@@ -194,10 +183,10 @@ if ($dan >= 1 && $dan <= 5 && $sat >= 8 && $sat < 16) {
             font-size: 1.05rem;
         }
         .status-otvoreno {
-            color: #1e7e34; /* zeleno */
+            color: #1e7e34; 
         }
         .status-zatvoreno {
-            color: #6c757d; /* sivo */
+            color: #6c757d; 
         }
     </style>
 </head>
